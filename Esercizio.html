@@ -101,7 +101,7 @@
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
-          <option value="fiat">Audi</option>
+          <option value="fiat">Fiat</option>
         </select>
         <input type="submit" value="Submit" >
         </fieldset>
@@ -110,14 +110,38 @@
 
     <div class="Java">
       <h1>Exercise 7</h1>
-      <img src="img/pannelli.jpg" alt="pannelli" style="width: 75%" onclick="cliccato()" onmouseover="mouseOver()" onmouseout="mouseOut()" oncontextmenu="contexmenu()">
+      <img src="img/pannelli.jpg" alt="pannelli" style="width: 75%" onclick="clic()" onmouseover="Over()" onmouseout="Out()" oncontextmenu="menu()">
     </div>
 
-    <!--<script type="text/javascript">
-    function cliccato() {
-        alert("Hai cliccato!!");
-    }
-    </script>-->
+    <div class="Java">
+      <h1>Exercise 8</h1>
+      <img src="img/pannelli.jpg" alt="pannelli" style="width: 75%" onclick="cliccato(this)" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" oncontextmenu="contexmenu(this)">
+    </div>
+
+    <div class="Java3" id="bottoni">
+      <h1>Exercise 9</h1>
+      <button type="button" onclick="hide()">HIDE</button>
+      <button type="button" onclick="seek()">SEEK</button>
+    </div>
+
+    <div>
+      <h1>Exercise 10</h1>
+      <form action="http://satt.diegm.uniud.it/wa/test_form.php">
+        <fieldset>
+          <input type="checkbox" name="privacy" value="yes" id="myCheck" onclick="disable()"> Confermi?<br>
+        </fieldset>
+        <br>
+        <fieldset id="fild" disabled>
+        Gender:<br>
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
+        <input type="radio" name="gender" value="other" checked> Other <br><br>
+        <input type="submit" value="Submit" >
+        </fieldset>
+      </form>
+    </div>
+
+    </script>
     <script src="Esercizio.js"></script>
   </body>
 </html>
