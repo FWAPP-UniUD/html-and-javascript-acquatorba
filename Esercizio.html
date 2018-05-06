@@ -2,27 +2,122 @@
 <html>
   <head>
     <title>Esercizio!</title>
+    <link rel="stylesheet" href="Esercizio.css">
   </head>
   <body>
     <div>
-    <h2>Elenco puntato</h2>
-    <ul>
-      <li>pasta</li>
-      <li>pere</li>
-      <li>melone</li>
-    </ul>
-    <h2>Elenco numerato</h2>
-    <ol>
-      <li>plastica</li>
-      <li>petrolio</li>
-      <li>benza</li>
-    </ol>
+      <h1>Exercise 1</h1>
+      <h2>Elenco puntato</h2>
+      <ul>
+        <li>pasta</li>
+        <li>pere</li>
+        <li>melone</li>
+      </ul>
+      <h2>Elenco numerato</h2>
+      <ol>
+        <li>plastica</li>
+        <li>petrolio</li>
+        <li>benza</li>
+      </ol>
+    </div>
+
+
     <div>
-    <div>
+      <h1>Exercise 2</h1>
       <p>
         <h2>Foto dei fenicotteri</h2>
-        <img src="img/fenicotteri.jpg" alt="Fenicotteri" style="width: 60%">
+        <img src="img/fenicotteri.jpg" alt="Fenicotteri" title="fenicotteri" style="width: 60%">
       </p>
     </div>
+
+
+    <div class="">
+      <h1>Exercise 3</h1>
+      <p >
+        <em> <strong> Grassetto Corsivo </strong> </em> <br>
+        <a href="http://it.wikipedia.org/wiki/File:Bart_Simpson.png" target="_blank">
+          <img src="http://upload.wikimedia.org/wikipedia/it/6/65/Bart_Simpson.png" alt="Bart Simpson" onclick="" style="width: 60%">
+        </a>
+      </p>
+    </div>
+
+
+    <div>
+      <h1>Exercise 4</h1>
+      <table style="width:100%">
+        <caption><b>Raccolta dati pesce</b></caption>
+        <tr>
+          <th>Settimana</th>
+          <th>N pesci</th>
+          <th>Colore</th>
+          <th>Peso medio</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>30</td>
+          <td>rosso</td>
+          <td>10 Kg</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>verde</td>
+          <td>10 Kg</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>60</td>
+          <td>nero</td>
+          <td>100 Kg</td>
+        </tr>
+        <tr>
+          <td>TOT</td>
+          <td>93</td>
+          <td>nd</td>
+          <td>40 Kg</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h1>Exercise 5/6</h1>
+      <form action="http://satt.diegm.uniud.it/wa/test_form.php">
+        <fieldset>
+          Username:<br>
+          <input type="text" name="username"><br>
+          Password:<br>
+          <input type="password" name="password"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+        Gender:<br>
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
+        <input type="radio" name="gender" value="other" checked> Other <br><br>
+        Privacy:
+        <input type="checkbox" name="privacy" value="yes"> Vuoi pi&ugrave; libert&agrave;?<br>
+        <select name="cars" multiple>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+          <option value="fiat">Audi</option>
+        </select>
+        <input type="submit" value="Submit" >
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="Java">
+      <h1>Exercise 7</h1>
+      <img src="img/pannelli.jpg" alt="pannelli" style="width: 75%" onclick="cliccato()" onmouseover="mouseOver()" onmouseout="mouseOut()" oncontextmenu="contexmenu()">
+    </div>
+
+    <!--<script type="text/javascript">
+    function cliccato() {
+        alert("Hai cliccato!!");
+    }
+    </script>-->
+    <script src="Esercizio.js"></script>
   </body>
 </html>
